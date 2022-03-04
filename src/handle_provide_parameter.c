@@ -1,14 +1,8 @@
 #include "poap_plugin.h"
 
-// Copies the whole parameter (32 bytes long) from `src` to `dst`.
-// Useful for numbers, data...
-static void copy_parameter(uint8_t *dst, uint8_t *src) {
-    memcpy(dst, src, PARAMETER_LENGTH);
-}
-
 // Copy token sent parameter to token_id
 static void handle_token(const ethPluginProvideParameter_t *msg, context_t *context) {
-    copy_parameter(context->token_id, msg->parameter);
+    copy_parameter(context->token_id, msg->parameter, PARAMETER_LENGTH);
 }
 
 static void handle_beneficiary(const ethPluginProvideParameter_t *msg, context_t *context) {

@@ -6,18 +6,18 @@ const rawTxHex = "0x02f90172010684625900808518ae17a40083055d16946f2235864cf89707
 
 const testLabel = "Mint Token"; // <= Name of the test
 const testDirSuffix = "mint_token"; // <= directory to compare device snapshots to
-const signedPlugin = true
+const signedPlugin = false;
 const devices = [
   {
     name: "nanos",
     label: "Nano S",
     steps: 7, // <= Define the number of steps for this test case and this device
   },
-  // {
-  //   name: "nanox",
-  //   label: "Nano X",
-  //   steps: 5, // <= Define the number of steps for this test case and this device
-  // },
+  {
+    name: "nanox",
+    label: "Nano X",
+    steps: 5, // <= Define the number of steps for this test case and this device
+  },
 ];
 
 devices.forEach((device) =>

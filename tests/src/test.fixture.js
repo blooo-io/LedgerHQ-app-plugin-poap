@@ -7,9 +7,8 @@ const transactionUploadDelay = 60000;
 
 const sim_options_generic = {
   logging: true,
-  X11: true,
-  startDelay: 5000,
-  custom: "-k 2.0",
+  startDelay: 15000,
+  startText: 'is ready'
 };
 
 const Resolve = require("path").resolve;
@@ -25,7 +24,6 @@ const NANOX_PLUGIN = { Poap: NANOX_PLUGIN_PATH };
 
 const poapJSON = generate_plugin_config();
 
-const SPECULOS_ADDRESS = "0xFE984369CE3919AA7BB4F431082D027B4F8ED70C";
 const RANDOM_ADDRESS = "0xaaaabbbbccccddddeeeeffffgggghhhhiiiijjjj";
 
 let genericTx = {

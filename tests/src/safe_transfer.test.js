@@ -1,8 +1,8 @@
 import "core-js/stable";
 import "regenerator-runtime/runtime";
-import { waitForAppScreen, zemu, genericTx, SPECULOS_ADDRESS, RANDOM_ADDRESS, txFromEtherscan } from './test.fixture';
+import { zemu, genericTx } from './test.fixture';
 import { ethers } from "ethers";
-import { parseEther, parseUnits } from "ethers/lib/utils";
+import { parseEther } from "ethers/lib/utils";
 
 const contractAddr = "0x6f2235864cf897078fcdcc2854b76c482cd16874";
 const pluginName = "poap";
@@ -46,4 +46,4 @@ test('[Nano S] Safe Transfer', zemu("nanos", async (sim, eth) => {
     await sim.navigateAndCompareSnapshots(".", label, [steps, 0]);
 
     await tx;
-}))
+}));
