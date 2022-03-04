@@ -35,9 +35,6 @@ void handle_init_contract(void *parameters) {
         case MINT_TOKEN:
             context->next_param = EVENT_ID;
             break;
-        case SAFE_TRANSFER:
-            context->next_param = FROM_ADDRESS;
-            break;
         default:
             PRINTF("Missing selectorIndex: %d\n", context->selectorIndex);
             msg->result = ETH_PLUGIN_RESULT_ERROR;
