@@ -5,6 +5,7 @@
   "main": "test.js",
   "scripts": {
     "build": "babel src/ -d lib/",
+    "lint": "eslint .",
     "prepublish": "yarn run build",
     "test": "jest src --verbose --runInBand --detectOpenHandles"
   },
@@ -15,7 +16,7 @@
     "@ledgerhq/hw-app-eth": "^6.9.0",
     "@ledgerhq/hw-transport-http": "^4.74.2",
     "@ledgerhq/logs": "^5.50.0",
-    "@zondax/zemu": "0.16.5",
+    "@zondax/zemu": "^0.25.1",
     "bignumber.js": "^9.0.0",
     "bip32-path": "^0.4.2",
     "core-js": "^3.7.0",

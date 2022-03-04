@@ -7,9 +7,6 @@ void handle_query_contract_id(void *parameters) {
     strlcpy(msg->name, PLUGIN_NAME, msg->nameLength);
 
     switch (context->selectorIndex) {
-        case SAFE_TRANSFER:
-            strlcpy(msg->version, "Safe Transfer", msg->versionLength);
-            break;
         case MINT_TOKEN:
             strlcpy(msg->version, "Mint", msg->versionLength);
             break;
