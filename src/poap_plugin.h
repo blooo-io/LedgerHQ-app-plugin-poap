@@ -4,7 +4,7 @@
 #include "eth_plugin_interface.h"
 #include <string.h>
 
-#define NUM_SELECTORS    2
+#define NUM_SELECTORS    1
 #define PLUGIN_NAME      "POAP"
 #define TOKEN_FOUND      1 << 1
 #define SELECTOR_SIZE    4
@@ -13,7 +13,6 @@
 
 typedef enum {
     MINT_TOKEN,
-    SAFE_TRANSFER,
 } selector_t;
 
 // Enumeration used to parse the smart contract data.
@@ -39,7 +38,6 @@ extern const uint8_t *const POAP_SELECTORS[NUM_SELECTORS];
 typedef struct context_t {
     // For display.
     uint8_t beneficiary[ADDRESS_LENGTH];
-    uint8_t from_address[ADDRESS_LENGTH];
     uint8_t token_id[PARAMETER_LENGTH];  // not crypto token dedicated poap token value int number
     char ticker[MAX_TICKER_LEN];
 

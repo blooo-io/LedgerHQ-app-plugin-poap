@@ -24,13 +24,13 @@
 
 #include "poap_plugin.h"
 
-// Function: mintToken(uint256 eventId, uint256 tokenId, address receiver, bytes signedMessage)
-// Selector: 0x3da5b8f0
-static const uint8_t MINT_TOKEN_SELECTOR[SELECTOR_SIZE] = {0x3d, 0xa5, 0xb8, 0xf0};
-static const uint8_t SAFE_TRANSFER_SELECTOR[SELECTOR_SIZE] = {0x42, 0x84, 0x2e, 0x0e};
+// Function: mintToken(uint256 eventId, uint256 tokenId, address receiver, uint256 expirationTime,
+// bytes signature)
+// Selector: 0xaf68b302
+static const uint8_t MINT_TOKEN_SELECTOR[SELECTOR_SIZE] = {0xaf, 0x68, 0xb3, 0x02};
 
 // Array of all the different poap selectors.
-const uint8_t *const POAP_SELECTORS[NUM_SELECTORS] = {MINT_TOKEN_SELECTOR, SAFE_TRANSFER_SELECTOR};
+const uint8_t *const POAP_SELECTORS[NUM_SELECTORS] = {MINT_TOKEN_SELECTOR};
 
 // Function to dispatch calls from the ethereum app.
 void dispatch_plugin_calls(int message, void *parameters) {
