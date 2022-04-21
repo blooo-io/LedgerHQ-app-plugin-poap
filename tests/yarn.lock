@@ -1881,10 +1881,10 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@zondax/zemu@^0.25.1":
-  version "0.25.1"
-  resolved "https://registry.npmjs.org/@zondax/zemu/-/zemu-0.25.1.tgz"
-  integrity sha512-vH5JMEg+Qvrih0NxiT1XZ6YvJVJd5lZ2/WA7UvOobbN1Rdkh2VUFEoe77Sma/HAvpF3vA4cM9UT5Wc/wjfJymQ==
+"@zondax/zemu@^0.27.4":
+  version "0.27.4"
+  resolved "https://registry.yarnpkg.com/@zondax/zemu/-/zemu-0.27.4.tgz#4e306ba76f5c718d901c7948516668e944a6aa1e"
+  integrity sha512-bbYAW9JJUx+hVBdwkTonu+0q9WkeFQpcGMRUrzS/Gfc6rvhAQ+X9KrGhwGrnxmBuzajt0oXZ50QvoEJHBR9PDA==
   dependencies:
     "@grpc/grpc-js" "^1.5.5"
     "@grpc/proto-loader" "^0.6.9"
