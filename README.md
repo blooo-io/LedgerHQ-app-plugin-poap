@@ -1,6 +1,6 @@
-# Ledger Poap Plugin
+# Ledger POAP Plugin
 
-This is a plugin for the Ethereum application which helps parsing and displaying relevant information when signing a Poap transaction.
+This is a plugin for the Ethereum application which helps parsing and displaying relevant information when signing a POAP transaction.
 
 ## Prerequisite
 
