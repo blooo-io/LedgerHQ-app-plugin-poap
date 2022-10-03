@@ -37,10 +37,8 @@ jobs:
     name: Clang Static Analyzer
     needs: job_build_debug
     runs-on: ubuntu-latest
-
     container:
       image: ghcr.io/ledgerhq/ledger-app-builder/ledger-app-builder:latest
-
     steps:
       - uses: actions/checkout@v2
 
