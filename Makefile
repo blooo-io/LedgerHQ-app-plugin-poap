@@ -93,8 +93,6 @@ ifneq ($(DEBUG),0)
                         DEFINES   += HAVE_PRINTF PRINTF=semihosted_printf
                 else
                         DEFINES   += HAVE_PRINTF PRINTF=screen_printf
-                else
-                        DEFINES   += HAVE_PRINTF PRINTF=mcu_usb_printf
                 endif
         endif
 else
