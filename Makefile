@@ -25,17 +25,17 @@ APP_LOAD_PARAMS += --appFlags 0x800 --path "44'/60'" --path "45'" --curve secp25
 APP_LOAD_PARAMS += $(COMMON_LOAD_PARAMS)
 
 APPVERSION_M     = 1
-APPVERSION_N     = 0
+APPVERSION_N     = 2
 APPVERSION_P     = 0
 APPVERSION       = "$(APPVERSION_M).$(APPVERSION_N).$(APPVERSION_P)"
 
-APPNAME = "Poap"
+APPNAME = "POAP"
 
 #prepare hsm generation
-ifeq ($(TARGET_NAME), TARGET_NANOX)
-ICONNAME=icons/nanox_app_poap.gif
-else
+ifeq ($(TARGET_NAME), TARGET_NANOS)
 ICONNAME=icons/nanos_app_poap.gif
+else
+ICONNAME=icons/nanox_app_poap.gif
 endif
 
 ################
@@ -93,6 +93,8 @@ ifneq ($(DEBUG),0)
                         DEFINES   += HAVE_PRINTF PRINTF=semihosted_printf
                 else
                         DEFINES   += HAVE_PRINTF PRINTF=screen_printf
+                else
+                        DEFINES   += HAVE_PRINTF PRINTF=mcu_usb_printf
                 endif
         endif
 else
@@ -161,4 +163,4 @@ include $(BOLOS_SDK)/Makefile.rules
 dep/%.d: %.c Makefile
 
 listvariants:
-	@echo VARIANTS NONE poap 
+	@echo VARIANTS NONE poap

@@ -5,7 +5,7 @@
 #include <string.h>
 
 #define NUM_SELECTORS    1
-#define PLUGIN_NAME      "Poap"
+#define PLUGIN_NAME      "POAP"
 #define SELECTOR_SIZE    4
 #define PARAMETER_LENGTH 32
 #define RUN_APPLICATION  1
