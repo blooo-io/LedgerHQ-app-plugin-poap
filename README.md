@@ -2,9 +2,9 @@
 [![Code style check](https://github.com/blooo-io/LedgerHQ-app-plugin-poap/actions/workflows/lint-workflow.yml/badge.svg)](https://github.com/blooo-io/LedgerHQ-app-plugin-poap/actions/workflows/lint-workflow.yml)
 [![Compilation & tests](https://github.com/blooo-io/LedgerHQ-app-plugin-poap/actions/workflows/ci-workflow.yml/badge.svg)](https://github.com/blooo-io/LedgerHQ-app-plugin-poap/actions/workflows/ci-workflow.yml)
 
-# Ledger Poap Plugin
+# Ledger POAP Plugin
 
-This is a plugin for the Ethereum application which helps parsing and displaying relevant information when signing a poap transaction.
+This is a plugin for the Ethereum application which helps parsing and displaying relevant information when signing a POAP transaction.
 
 ## Prerequisite
 
